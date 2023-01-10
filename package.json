@@ -15,7 +15,10 @@
   ],
   "exports": "./src/main.js",
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "mocha test/*.js",
+    "pubpatch": "npm version patch && npm publish",
+    "pubminor": "npm version minor && npm publish",
+    "pubmajor": "npm version major && npm publish"
   },
   "repository": {
     "type": "git",
