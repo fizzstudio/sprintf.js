@@ -2,9 +2,8 @@
 
 'use strict'
 
-var assert = require('assert'),
-    sprintfjs = require('../src/sprintf.js'),
-    sprintf = sprintfjs.sprintf
+import { strict as assert } from 'node:assert';
+import { sprintf } from '../src/main.js';
 
 describe('sprintfjs', function() {
     var pi = 3.141592653589793

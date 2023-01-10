@@ -2,10 +2,8 @@
 
 'use strict'
 
-var assert = require('assert'),
-    sprintfjs = require('../src/sprintf.js'),
-    sprintf = sprintfjs.sprintf,
-    vsprintf = sprintfjs.vsprintf
+import { strict as assert } from 'node:assert';
+import { sprintf, vsprintf } from '../src/main.js';
 
 function should_throw(format,args,err) {
     assert.throws(function() { vsprintf(format,args) }, err)

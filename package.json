@@ -1,32 +1,34 @@
 {
-  "name": "sprintf-js",
+  "name": "@fizz/sprintf-js",
   "version": "1.1.2",
   "description": "JavaScript sprintf implementation",
   "author": "Alexandru Mărășteanu <hello@alexei.ro>",
-  "main": "src/sprintf.js",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.fizz.studio"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "src/main.js"
+  ],
+  "exports": "./src/main.js",
   "scripts": {
-    "test": "mocha test/*.js",
-    "pretest": "npm run lint",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "test": "mocha test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexei/sprintf.js.git"
+    "url": "git+https://github.com/fizzstudio/sprintf.js.git"
   },
-  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/fizzstudio/sprintf.js/issues"
+  },
+  "homepage": "https://github.com/fizzstudio/sprintf.js#readme",
   "readmeFilename": "README.md",
   "devDependencies": {
     "benchmark": "^2.1.4",
     "eslint": "^5.10.0",
-    "gulp": "^3.9.1",
-    "gulp-benchmark": "^1.1.1",
-    "gulp-eslint": "^5.0.0",
-    "gulp-header": "^2.0.5",
-    "gulp-mocha": "^6.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1",
-    "mocha": "^5.2.0"
+    "mocha": "^10.2.0"
   }
 }
