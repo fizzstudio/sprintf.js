@@ -1,6 +1,6 @@
 {
   "name": "@fizz/sprintf-js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "JavaScript sprintf implementation",
   "author": "Alexandru Mărășteanu <hello@alexei.ro>",
   "license": "BSD-3-Clause",
