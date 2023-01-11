@@ -11,8 +11,10 @@
   "type": "module",
   "files": [
     "dist",
-    "src/main.js"
+    "src/main.js",
+    "src/main.d.ts"
   ],
+  "types": "./src/main.d.ts",
   "exports": "./src/main.js",
   "scripts": {
     "test": "mocha test/*.js",
